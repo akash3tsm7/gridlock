@@ -7,3 +7,4 @@ fix_xgboost_old_version.py
 XGBOOST_ERROR_SOLUTION.md
 xgboost_fix_snippet.py
 final_fix.py
+fix_xgb.py
