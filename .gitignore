@@ -3,3 +3,7 @@ apply_all_fixes.py
 fix_notebook.py
 fix_xgboost_compatibility.py
 FIXES_APPLIED.md
+fix_xgboost_old_version.py
+XGBOOST_ERROR_SOLUTION.md
+xgboost_fix_snippet.py
+final_fix.py
