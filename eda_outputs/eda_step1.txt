@@ -1,0 +1,166 @@
+=== TRAIN ===
+
+shape
+
+(77299, 11)
+
+dtypes
+
+Index              int64
+geohash              str
+day                int64
+timestamp            str
+demand           float64
+RoadType             str
+NumberofLanes      int64
+LargeVehicles        str
+Landmarks            str
+Temperature      float64
+Weather              str
+
+nulls
+
+Index               0
+geohash             0
+day                 0
+timestamp           0
+demand              0
+RoadType          600
+NumberofLanes       0
+LargeVehicles       0
+Landmarks           0
+Temperature      2495
+Weather           797
+
+=== TEST ===
+
+shape
+
+(41778, 10)
+
+dtypes
+
+Index              int64
+geohash              str
+day                int64
+timestamp            str
+RoadType             str
+NumberofLanes      int64
+LargeVehicles        str
+Landmarks            str
+Temperature      float64
+Weather              str
+
+nulls
+
+Index               0
+geohash             0
+day                 0
+timestamp           0
+RoadType          324
+NumberofLanes       0
+LargeVehicles       0
+Landmarks           0
+Temperature      1349
+Weather           431
+
+=== DEMAND STATS (train) ===
+
+describe
+
+count    7.729900e+04
+mean     9.394238e-02
+std      1.421905e-01
+min      6.245650e-07
+25%      1.822723e-02
+50%      4.775994e-02
+75%      1.085951e-01
+max      1.000000e+00
+
+skew
+
+3.7285172887316627
+
+Histogram saved to: eda_outputs\demand_hist.png
+
+=== UNIQUE VALUE COUNTS (train) ===
+
+value_counts: day
+
+day
+48    69427
+49     7872
+
+value_counts: RoadType
+
+RoadType
+Residential    69230
+Street          3909
+Highway         3560
+NaN              600
+
+value_counts: NumberofLanes
+
+NumberofLanes
+1    27411
+2    24127
+3    23919
+4      926
+5      916
+
+value_counts: LargeVehicles
+
+LargeVehicles
+Not Allowed    50673
+Allowed        26626
+
+value_counts: Landmarks
+
+Landmarks
+Yes    52042
+No     25257
+
+value_counts: Weather
+
+Weather
+Sunny    27717
+Rainy    20824
+Foggy    20243
+Snowy     7718
+NaN        797
+
+=== GEOHASH SAMPLE + LENGTHS (train) ===
+
+geohash head(10)
+
+0    qp02z1
+1    qp02zt
+2    qp08bj
+3    qp08gt
+4    qp02zq
+5    qp02zw
+6    qp02zy
+7    qp08by
+8    qp08gq
+9    qp08gy
+
+geohash length counts
+
+geohash
+6    77299
+
+=== GROUPBY MEANS (train) ===
+
+mean demand by day
+
+day
+48    0.092659
+49    0.105262
+
+mean demand by Weather
+
+Weather
+Foggy    0.093372
+Rainy    0.094471
+Snowy    0.092581
+Sunny    0.094247
