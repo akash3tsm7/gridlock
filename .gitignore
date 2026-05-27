@@ -1,3 +1,5 @@
 fix_notebook_v2.py
 apply_all_fixes.py
 fix_notebook.py
+fix_xgboost_compatibility.py
+FIXES_APPLIED.md
